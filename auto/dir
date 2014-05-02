@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Copyright (C) xianliang.li
+
+
+mkdir -p objs/src
+mkdir -p objs/src/core
+mkdir -p objs/src/event
+mkdir -p objs/src/os
+mkdir -p objs/src/os/unix
+mkdir -p objs/src/dns
+
+mkdir -p objs/test
+mkdir -p objs/test/core
+
+mkdir -p logs

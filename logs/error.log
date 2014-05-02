@@ -1,0 +1,48 @@
+2014/05/02 15:06:14 [debug] 17715: memalign(16, 1024) 0x104d030
+2014/05/02 15:06:14 [info ] 17715: cycle init
+2014/05/02 15:06:14 [debug] 17715: memalign(16, 16384) 0x104d440
+2014/05/02 15:06:14 [debug] 17715: memalign(16, 16384) 0x1051450
+2014/05/02 15:20:43 [debug] 18209: memalign(16, 1024) 0x2321030
+2014/05/02 15:20:43 [info ] 18209: cycle init
+2014/05/02 15:20:43 [debug] 18209: memalign(16, 16384) 0x2321440
+2014/05/02 15:20:43 [debug] 18209: malloc(36835377) 0x7f0bfe9b4010
+2014/05/02 15:22:34 [debug] 18286: memalign(16, 1024) 0xde0030
+2014/05/02 15:22:34 [info ] 18286: cycle init
+2014/05/02 15:22:34 [debug] 18286: memalign(16, 16384) 0xde0440
+2014/05/02 15:22:34 [debug] 18286: memalign(16, 16384) 0xde4450
+2014/05/02 15:22:34 [debug] 18286: malloc(4096) 0xde8460
+2014/05/02 15:22:34 [emerg] 18286: args: index:0 value:worker_process in conf/speed.conf:4
+2014/05/02 15:22:34 [emerg] 18286: args: index:1 value:1 in conf/speed.conf:4
+2014/05/02 15:22:34 [emerg] 18286: args: index:0 value:working_directory in conf/speed.conf:6
+2014/05/02 15:22:34 [emerg] 18286: args: index:1 value:/home/lxl/speed in conf/speed.conf:6
+2014/05/02 15:22:34 [emerg] 18286: args: index:0 value:error_log in conf/speed.conf:8
+2014/05/02 15:22:34 [emerg] 18286: args: index:1 value:logs/speed.log in conf/speed.conf:8
+2014/05/02 15:22:34 [emerg] 18286: args: index:2 value:info in conf/speed.conf:8
+2014/05/02 15:22:34 [emerg] 18286: args: index:3 value:flush in conf/speed.conf:8
+2014/05/02 15:22:34 [emerg] 18286: args: index:4 value:debug_all in conf/speed.conf:8
+2014/05/02 15:26:11 [debug] 18560: memalign(16, 1024) 0x2451030
+2014/05/02 15:26:11 [info ] 18560: cycle init
+2014/05/02 15:26:11 [debug] 18560: memalign(16, 16384) 0x2451440
+2014/05/02 15:26:11 [debug] 18560: memalign(16, 16384) 0x2455450
+2014/05/02 15:26:11 [debug] 18560: malloc(4096) 0x2459460
+2014/05/02 15:26:11 [emerg] 18560: args: index:0 value:worker_process in conf/speed.conf:4
+2014/05/02 15:26:11 [emerg] 18560: args: index:1 value:1 in conf/speed.conf:4
+2014/05/02 15:26:11 [emerg] 18560: args: index:0 value:working_directory in conf/speed.conf:6
+2014/05/02 15:26:11 [emerg] 18560: args: index:1 value:/home/lxl/speed in conf/speed.conf:6
+2014/05/02 15:26:11 [emerg] 18560: args: index:0 value:error_log in conf/speed.conf:8
+2014/05/02 15:26:11 [emerg] 18560: args: index:1 value:logs/speed.log in conf/speed.conf:8
+2014/05/02 15:26:11 [emerg] 18560: args: index:2 value:info in conf/speed.conf:8
+2014/05/02 15:26:11 [emerg] 18560: args: index:3 value:flush in conf/speed.conf:8
+2014/05/02 15:26:11 [emerg] 18560: args: index:4 value:debug_all in conf/speed.conf:8
+2014/05/02 15:26:11 [emerg] 18560: args: index:0 value:events in conf/speed.conf:10
+2014/05/02 15:26:11 [emerg] 18560: args: index:0 value:use in conf/speed.conf:11
+2014/05/02 15:26:11 [emerg] 18560: args: index:1 value:epoll in conf/speed.conf:11
+2014/05/02 15:26:11 [emerg] 18560: args: index:0 value:worker_connections in conf/speed.conf:12
+2014/05/02 15:26:11 [emerg] 18560: args: index:1 value:1024 in conf/speed.conf:12
+2014/05/02 15:26:11 [emerg] 18560: args: index:0 value:dns in conf/speed.conf:15
+2014/05/02 15:26:11 [emerg] 18560: args: index:0 value:named_root_file in conf/speed.conf:16
+2014/05/02 15:26:11 [emerg] 18560: args: index:1 value:conf/named.root in conf/speed.conf:16
+2014/05/02 15:26:11 [emerg] 18560: args: index:0 value:server in conf/speed.conf:18
+2014/05/02 15:26:11 [emerg] 18560: args: index:0 value:listen in conf/speed.conf:19
+2014/05/02 15:26:11 [emerg] 18560: args: index:1 value:127.0.0.1:53 in conf/speed.conf:19
+2014/05/02 15:26:11 [debug] 18560: open log file: /home/lxl/code/speed/logs/speed.log

@@ -1,0 +1,131 @@
+2014/05/02 15:24:58 [debug] 18481: bind() to 127.0.0.1#4
+2014/05/02 15:24:58 [emerg] 18481: bind() to 127.0.0.1 failed (13: Permission denied)
+2014/05/02 15:24:58 [debug] 18481: free: 0x622450, unused: 16320
+2014/05/02 15:24:58 [debug] 18481: free: 0x61e440, unused: 13974
+2014/05/02 15:26:11 [debug] 18560: bind() to 127.0.0.1#4
+2014/05/02 15:26:11 [info ] 18560: using the "epoll" event method
+2014/05/02 15:26:11 [info ] 18561: start worker process
+2014/05/02 15:26:11 [info ] 18562: worker process init
+2014/05/02 15:26:11 [debug] 18562: epoll conf events 512, cycle->connection_n 1024
+2014/05/02 15:26:11 [debug] 18562: malloc(6144) 0x2459460
+2014/05/02 15:26:11 [debug] 18562: malloc(114688) 0x245ac70
+2014/05/02 15:26:11 [debug] 18562: malloc(81920) 0x2476c80
+2014/05/02 15:26:11 [debug] 18562: malloc(81920) 0x248ac90
+2014/05/02 15:26:11 [debug] 18562: get connection fd:3
+2014/05/02 15:26:11 [debug] 18562: epoll add event: fd:3, op:1, ev:00000001
+2014/05/02 15:26:11 [debug] 18562: memalign(16, 16384) 0x249eca0
+2014/05/02 15:26:11 [info ] 18562: dns init zone hash
+2014/05/02 15:26:11 [debug] 18562: malloc(8192000) 0x7f292014a010
+2014/05/02 15:26:11 [info ] 18562: dns load named root path conf/named.root
+2014/05/02 15:26:11 [debug] 18562: malloc(44) 0x2450d60
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name: type:0200 ttl:604800 rdata:aroot-serversnet
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(28) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:aroot-serversnet type:0100 ttl:604800 rdata:198.41.0.4
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(40) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:aroot-serversnet type:1c00 ttl:604800 rdata:2001:503:ba3e::2:30
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(44) 0x2450d60
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name: type:0200 ttl:604800 rdata:broot-serversnet
+2014/05/02 15:26:11 [debug] 18562: dns add rdata
+2014/05/02 15:26:11 [debug] 18562: malloc(28) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:broot-serversnet type:0100 ttl:604800 rdata:192.228.79.201
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(44) 0x2450d60
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name: type:0200 ttl:604800 rdata:croot-serversnet
+2014/05/02 15:26:11 [debug] 18562: dns add rdata
+2014/05/02 15:26:11 [debug] 18562: malloc(28) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:croot-serversnet type:0100 ttl:604800 rdata:192.33.4.12
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(44) 0x2450d60
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name: type:0200 ttl:604800 rdata:droot-serversnet
+2014/05/02 15:26:11 [debug] 18562: dns add rdata
+2014/05/02 15:26:11 [debug] 18562: malloc(28) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:droot-serversnet type:0100 ttl:604800 rdata:199.7.91.13
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(40) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:droot-serversnet type:1c00 ttl:604800 rdata:2001:500:2d::d
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(44) 0x2450d60
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name: type:0200 ttl:604800 rdata:eroot-serversnet
+2014/05/02 15:26:11 [debug] 18562: dns add rdata
+2014/05/02 15:26:11 [debug] 18562: malloc(28) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:eroot-serversnet type:0100 ttl:604800 rdata:192.203.230.10
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(44) 0x2450d60
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name: type:0200 ttl:604800 rdata:froot-serversnet
+2014/05/02 15:26:11 [debug] 18562: dns add rdata
+2014/05/02 15:26:11 [debug] 18562: malloc(28) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:froot-serversnet type:0100 ttl:604800 rdata:192.5.5.241
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(40) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:froot-serversnet type:1c00 ttl:604800 rdata:2001:500:2f::f
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(44) 0x2450d60
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name: type:0200 ttl:604800 rdata:groot-serversnet
+2014/05/02 15:26:11 [debug] 18562: dns add rdata
+2014/05/02 15:26:11 [debug] 18562: malloc(28) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:groot-serversnet type:0100 ttl:604800 rdata:192.112.36.4
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(44) 0x2450d60
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name: type:0200 ttl:604800 rdata:hroot-serversnet
+2014/05/02 15:26:11 [debug] 18562: dns add rdata
+2014/05/02 15:26:11 [debug] 18562: malloc(28) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:hroot-serversnet type:0100 ttl:604800 rdata:128.63.2.53
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(40) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:hroot-serversnet type:1c00 ttl:604800 rdata:2001:500:1::803f:235
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(44) 0x2450d60
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name: type:0200 ttl:604800 rdata:iroot-serversnet
+2014/05/02 15:26:11 [debug] 18562: dns add rdata
+2014/05/02 15:26:11 [debug] 18562: malloc(28) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:iroot-serversnet type:0100 ttl:604800 rdata:192.36.148.17
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(40) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:iroot-serversnet type:1c00 ttl:604800 rdata:2001:7fe::53
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(44) 0x2450d60
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name: type:0200 ttl:604800 rdata:jroot-serversnet
+2014/05/02 15:26:11 [debug] 18562: dns add rdata
+2014/05/02 15:26:11 [debug] 18562: malloc(28) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:jroot-serversnet type:0100 ttl:604800 rdata:192.58.128.30
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(40) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:jroot-serversnet type:1c00 ttl:604800 rdata:2001:503:c27::2:30
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(44) 0x2450d60
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name: type:0200 ttl:604800 rdata:kroot-serversnet
+2014/05/02 15:26:11 [debug] 18562: dns add rdata
+2014/05/02 15:26:11 [debug] 18562: malloc(28) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:kroot-serversnet type:0100 ttl:604800 rdata:193.0.14.129
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(40) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:kroot-serversnet type:1c00 ttl:604800 rdata:2001:7fd::1
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(44) 0x2450d60
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name: type:0200 ttl:604800 rdata:lroot-serversnet
+2014/05/02 15:26:11 [debug] 18562: dns add rdata
+2014/05/02 15:26:11 [debug] 18562: malloc(28) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:lroot-serversnet type:0100 ttl:604800 rdata:199.7.83.42
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(40) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:lroot-serversnet type:1c00 ttl:604800 rdata:2001:500:3::42
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(44) 0x2450d60
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name: type:0200 ttl:604800 rdata:mroot-serversnet
+2014/05/02 15:26:11 [debug] 18562: dns add rdata
+2014/05/02 15:26:11 [debug] 18562: malloc(28) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:mroot-serversnet type:0100 ttl:604800 rdata:202.12.27.33
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [debug] 18562: malloc(40) 0x2450da0
+2014/05/02 15:26:11 [debug] 18562: dns add rr: name:mroot-serversnet type:1c00 ttl:604800 rdata:2001:dc3::35
+2014/05/02 15:26:11 [debug] 18562: dna add rrset
+2014/05/02 15:26:11 [info ] 18562: dns add root zone
+2014/05/02 15:26:11 [debug] 18562: worker cycle
+2014/05/02 15:26:11 [debug] 18562: epoll timer: -1
+2014/05/02 17:09:03 [debug] 19986: bind() to 127.0.0.1#4
+2014/05/02 17:09:03 [emerg] 19986: bind() to 127.0.0.1 failed (13: Permission denied)
+2014/05/02 17:09:03 [debug] 19986: free: 0x622450, unused: 16320
+2014/05/02 17:09:03 [debug] 19986: free: 0x61e440, unused: 13894
