@@ -44,6 +44,7 @@ lxl_start_worker_process(lxl_cycle_t *cycle, lxl_int_t n)
 		switch (pid) {
 			case -1:
 				lxl_log_error(LXL_LOG_ALERT, errno, "fork() failed");
+				lxl_log_flush();
 				return;
 
 			case 0:
@@ -79,14 +80,10 @@ lxl_worker_process_init(lxl_cycle_t *cycle, lxl_int_t worker)
 		if (lxl_modules[i]->init_process) {
 			if (lxl_modules[i]->init_process(cycle) == -1) {
 				/* fatal */
+				lxl_log_flush();
 				exit(2);
 			}
 		}
 	}
-	// event module
-	//lxl_event_process_init(cycle);
-	// dns module
-	//lxl_dns_block(0);
-	//lxl_dns_block_handler(cycle->udp_connection_n);
 }
 

@@ -391,6 +391,15 @@ lxl_log_stderr(int err, const char *fmt, ...)
 	write(STDERR_FILENO, msg, msg_len);
 }
 
+void 
+lxl_log_flush(void)
+{
+	if (lxl_log.buf_len > 0) {
+		lxl_log_write(lxl_log.buf_len);
+    	lxl_log.buf_len = 0;
+	}
+}
+
 static char *		
 lxl_error_log(lxl_conf_t *cf, lxl_command_t *cmd, void *conf)
 {

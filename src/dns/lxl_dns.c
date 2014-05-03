@@ -189,6 +189,8 @@ lxl_dns_block(lxl_conf_t *cf, lxl_command_t *cmd, void *conf)
 		return LXL_CONF_ERROR;
 	}
 
+	lxl_dns_data_rebuild_handler(NULL);
+
 	return LXL_CONF_OK;
 }
 
@@ -228,6 +230,8 @@ lxl_dns_optimize_servers(lxl_conf_t *cf, lxl_array_t *listens, lxl_int_t tcp)
 static void 	 
 lxl_dns_data_rebuild_handler(lxl_event_t *ev)
 {
+	return;
+
 	lxl_dns_data_dump();
 	lxl_dns_data_rebuild();
 	ev->timedout = 0;

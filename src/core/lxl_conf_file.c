@@ -418,6 +418,10 @@ lxl_conf_log_error(lxl_uint_t level, lxl_conf_t *cf, int err, const char *fmt, .
 	vsnprintf(errstr, LXL_MAX_CONF_ERRSTR, fmt, ap);
 	va_end(ap);
 
+	if (cf->conf_file == NULL) {
+		lxl_log_error1(level, err, "%s ", errstr);
+		return;
+	}
 
 	lxl_log_error1(level, err, "%s in %s:%lu", errstr, cf->conf_file->file.name.data, cf->conf_file->line);
 }

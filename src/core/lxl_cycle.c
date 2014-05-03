@@ -160,12 +160,6 @@ lxl_init_cycle(lxl_cycle_t *old_cycle)
 
 	/* create paths */
 
-	/* errlog init conf */
-	if (lxl_errlog_module_init_conf(cycle, lxl_get_conf(cycle->conf_ctx, lxl_errlog_module)) != LXL_CONF_OK) {
-		lxl_destroy_cycle_pools(&conf);
-		return NULL;
-	}
-	
 	if (lxl_open_listening_sockets(cycle) != 0) {
 		lxl_destroy_cycle_pools(&conf);
 		return NULL;
@@ -181,6 +175,12 @@ lxl_init_cycle(lxl_cycle_t *old_cycle)
 				exit(1);
 			}
 		}
+	}
+
+	/* errlog init conf */
+	if (lxl_errlog_module_init_conf(cycle, lxl_get_conf(cycle->conf_ctx, lxl_errlog_module)) != LXL_CONF_OK) {
+		lxl_destroy_cycle_pools(&conf);
+		return NULL;
 	}
 
 	return cycle;

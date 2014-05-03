@@ -210,7 +210,6 @@ lxl_event_accept(lxl_event_t *ev)
 				return;
 			}
 
-			lxl_log_debug(LXL_LOG_DEBUG_EVENT, 0, "accept pool size %ld", ls->pool_size);
 			c->pool = lxl_create_pool(ls->pool_size);
 			if (c->pool == NULL) {
 				lxl_close_accepted_connection(c, LXL_CONNECTION_CLOSE_SOCKET);
@@ -273,7 +272,6 @@ lxl_event_accept_udp(lxl_event_t *ev)
 				return;
 			}
 
-			lxl_log_debug(LXL_LOG_DEBUG_EVENT, 0, "accept udp pool size %ld", ls->pool_size);
 			c->pool = lxl_create_pool(ls->pool_size);
 			if (c->pool == NULL) {
 				lxl_close_accepted_connection(c, LXL_CONNECTION_NOT_CLOSE_SOCKET);

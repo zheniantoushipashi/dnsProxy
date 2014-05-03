@@ -15,16 +15,12 @@
 #include <lxl_process.h>
 
 
+static int	 lxl_get_options(int argc, char *argv[]);
 static int 	 lxl_process_options(lxl_cycle_t *cycle);
 static void *lxl_core_module_create_conf(lxl_cycle_t *cycle);
 static char *lxl_core_module_init_conf(lxl_cycle_t *cycle, void *conf);
 static char *lxl_set_worker_process(lxl_conf_t *cf, lxl_command_t *cmd, void *conf);
 static int	 lxl_daemon(void);
-
-
-lxl_uint_t lxl_max_module;
-static char    *lxl_prefix;
-static char    *lxl_conf_file;
 
 
 static lxl_command_t lxl_core_commands[] = {
@@ -100,6 +96,13 @@ lxl_module_t *lxl_modules[] = {
 	NULL
 };
 
+lxl_uint_t lxl_max_module;
+
+static lxl_uint_t 	lxl_show_help;
+static lxl_uint_t 	lxl_show_version;
+static char    	   *lxl_prefix;
+static char        *lxl_conf_file;
+
 
 int main(int argc, char *argv[])
 {
@@ -110,6 +113,26 @@ int main(int argc, char *argv[])
 
 	if (lxl_strerror_init() == -1) {
 		return 1;
+	}
+
+	if (lxl_get_options(argc, argv) != 0) {
+		return 1;
+	}
+	
+	if (lxl_show_version) {
+		fprintf(stderr, "speed version: speed/0.1.0\n");
+
+		if (lxl_show_help) {
+			fprintf(stderr, 
+				"Usage: speed [-?hv] [-c filename]\n\n"
+				"Options: \n"
+				" -?,-h         : this help and exit\n"
+				" -v            : show version and exit\n"
+				" -c filename   : set configuration file (default " LXL_CONF_PATH ")\n"
+				);
+		}
+
+		return 0;
 	}
 
 	lxl_time_init();
@@ -146,7 +169,7 @@ int main(int argc, char *argv[])
 
 	lxl_cycle = cycle;
 
-	ccf = lxl_get_conf(cycle->conf_ctx, lxl_core_module);
+	ccf = (lxl_core_conf_t *) lxl_get_conf(cycle->conf_ctx, lxl_core_module);
 
 	if (ccf->daemon) {
 		if (lxl_daemon() != 0) {
@@ -155,6 +178,60 @@ int main(int argc, char *argv[])
 	}
 
 	lxl_master_process_cycle(lxl_cycle);
+
+	return 0;
+}
+
+static int	 
+lxl_get_options(int argc, char *argv[])
+{
+	char *p;
+	lxl_int_t i;
+
+	for (i = 1; i < argc; ++i) {
+		p = argv[i];
+		if (*p++ != '-') {
+			lxl_log_stderr(0, "invalid option: %s", argv[i]);
+			return -1;
+		}
+
+		while (*p) {
+			switch (*p++) {
+
+			case '?':
+			case 'h':
+				lxl_show_version = 1;
+				lxl_show_help = 1;
+				break;
+
+			case 'v':
+				lxl_show_version = 1;
+				break;
+			
+			case 'c':
+				if (*p) {
+					lxl_conf_file = p;
+					goto next;
+				}
+
+				if (argv[++i]) {
+					lxl_conf_file = argv[i];
+					goto next;
+				}
+
+				lxl_log_stderr(0, "option -c request file name");
+				return -1;
+
+			default:
+				lxl_log_stderr(0, "invalid option: %c", *(p - 1));
+				return -1;
+			}
+		}
+
+	next:
+
+		continue;
+	}	
 
 	return 0;
 }

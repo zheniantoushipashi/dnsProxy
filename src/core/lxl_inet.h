@@ -36,7 +36,7 @@ typedef struct {
 	unsigned 	wildcard:1;
 	
 	socklen_t	socklen;
-	u_char		sockaddr[LXL_SOCKADDRLEN];
+	char		sockaddr[LXL_SOCKADDRLEN];
 	char 		*err;
 } lxl_url_t;
 

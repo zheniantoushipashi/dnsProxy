@@ -63,8 +63,7 @@ lxl_parse_inet_url(lxl_pool_t *pool, lxl_url_t *u)
 	struct sockaddr_in *sin;
 
 	u->socklen = sizeof(struct sockaddr_in);
-	sin = (struct sockadd_in *) &(u->sockaddr);
-	//memset(sin, 0x00, sizeof(struct sockaddr_in));
+	sin = (struct sockaddr_in *) (u->sockaddr);
 	sin->sin_family = AF_INET;
 	u->family = AF_INET;
 	
