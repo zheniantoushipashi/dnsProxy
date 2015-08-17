@@ -107,7 +107,7 @@ static char        *lxl_conf_file;
 int main(int argc, char *argv[])
 {
 
-	fprintf(STDOUT_FILENO, "%s\n", "sdfsfsdfsdf");
+	fprintf(stderr, "%s\n", "sdfsfsdfsdf");
 	lxl_uint_t i;
 	lxl_log_t *log;
 	lxl_cycle_t *cycle, init_cycle;
