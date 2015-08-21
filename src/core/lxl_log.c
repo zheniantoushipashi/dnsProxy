@@ -178,7 +178,7 @@ lxl_log_init(lxl_uint_t error_level, lxl_uint_t debug_level, lxl_uint_t flush, c
 			snprintf(lxl_log.file, LXL_MAX_CONF_PATH, "%s", name);
 		}
 	}
-
+    fprintf(stderr, "lxl_log.file %s\n",  lxl_log.file);
 	//fd = open(lxl_log_file, O_CREAT|O_WRONLY|O_TRUNC, 0666);	
 	lxl_log.fd = open(lxl_log.file, O_CREAT|O_WRONLY|O_APPEND, 0666);	
 	if (lxl_log.fd == -1) {

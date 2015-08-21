@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	lxl_time_init();
 
 	//lxl_log_t *log = lxl_log_init(LXL_LOG_DEBUG, 0, LXL_LOG_FLUSH);
-	lxl_log_t *log = lxl_log_init(LXL_LOG_DEBUG, 0, LXL_LOG_BUFFER);
+	lxl_log_t *log = lxl_log_init(LXL_LOG_DEBUG, 0, LXL_LOG_BUFFER,"/logs");
 	int i;
 	for (i = 0; i < 180; ++i) {
 		lxl_log_error(LXL_LOG_DEBUG, i, "lxl log test %d", i);
