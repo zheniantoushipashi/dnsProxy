@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	//lxl_log_t *log = lxl_log_init(LXL_LOG_DEBUG, 0, LXL_LOG_FLUSH);
 	lxl_log_t *log = lxl_log_init(LXL_LOG_DEBUG, 0, LXL_LOG_BUFFER,"/logs");
 	int i;
-    int m = 5
+    int m = 5;
 	for (i = 0; i < 180; ++i) {
         lxl_log_error(LXL_LOG_DEBUG, i,  "this i is %d , m is  %d",i, m);
 		//lxl_log_error(LXL_LOG_DEBUG, i, "lxl log test %d", i);
