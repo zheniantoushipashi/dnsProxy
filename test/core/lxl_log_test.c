@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	int i;
     int m = 5
 	for (i = 0; i < 180; ++i) {
-        lxl_log_error(LXL_LOG_DEBUG, i,  "this i is %d , m is  %d",i, m)
+        lxl_log_error(LXL_LOG_DEBUG, i,  "this i is %d , m is  %d",i, m);
 		//lxl_log_error(LXL_LOG_DEBUG, i, "lxl log test %d", i);
 	}
 
