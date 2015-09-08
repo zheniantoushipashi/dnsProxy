@@ -207,7 +207,7 @@ void lxl_log_core(lxl_uint_t loglevel, int err, const char *format, ...)
 	n = snprintf(fmt, LXL_MAX_FMT_STR, "%s [%s] %d: ", lxl_log_time, lxl_log_err_levels[loglevel], lxl_pid);
 	if (n > 0) {
 		fmt_len = n;
-	} else {
+	} else { 
 		fmt_len = 0;
 	}
 

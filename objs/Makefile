@@ -225,6 +225,9 @@ HASH_SRC 	= src/core/lxl_log.c src/core/lxl_palloc.c 	src/core/lxl_hash.c
 
 lxl_log_test: test/core/lxl_log_test.c $(LOG_SRC)
 	$(CC) $(CFLAGS) $(ALL_INCS) $(LOG_SRC) $< -o objs/test/core/$@
+	
+lxl_log_test1: $(SPEED_SRC)  test/core/lxl_log_test.c
+		$(CC) $(ALL_INCS)  $^ -o logtest	
 
 lxl_array_test: test/core/lxl_array_test.c $(ARRAY_SRC)
 	 $(CC) $(CFLAGS) $(ALL_INCS) $(ARRAY_SRC) $< -o objs/test/core/$@
