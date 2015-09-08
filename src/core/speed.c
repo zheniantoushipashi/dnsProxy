@@ -104,7 +104,7 @@ static char    	   *lxl_prefix;
 static char        *lxl_conf_file;
 
 
-int main(int argc, char *argv[])
+int main1(int argc, char *argv[])
 {
 
 	fprintf(stderr, "%s\n", "sdfsfsdfsdf");
