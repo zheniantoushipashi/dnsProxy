@@ -17,7 +17,7 @@ void  dump_pool(lxl_pool_t* pool) {
         printf("  .chain = 0x%x\n", pool->chain);  
         printf("  .large = 0x%x\n", pool->large);  
         printf("  .cleanup = 0x%x\n", pool->cleanup);  
-        printf("  .log = 0x%x\n", pool->log);  
+     //   printf("  .log = 0x%x\n", pool->log);  
         printf("available pool memory = %d\n\n", pool->d.end - pool->d.last);  
         pool = pool->d.next;  
 	}
