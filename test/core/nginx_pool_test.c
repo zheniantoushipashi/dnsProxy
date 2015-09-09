@@ -29,6 +29,6 @@ int main() {
 	printf("---------------------------------\n");
 	printf("create a new pool\n");
 	printf("---------------------------------\n");
-	pool = ngx_create_pool(1024);
+	pool = lxl_create_pool(1024);
     dump_pool(pool); 
 }
